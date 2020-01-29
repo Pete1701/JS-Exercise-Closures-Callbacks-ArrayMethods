@@ -202,12 +202,18 @@ function getFullNames(runners) {
 */
 
 function firstNamesAllCaps(runners) {
-  const capsNames = [];
-  runners.forEach(function(item) {
-    capsNames.push(item.first_name.toUpperCase());    
-    });
-    return capsNames;   
-}
+      return runners.map(function(item) {
+      return (item.first_name.toUpperCase());    
+      });        
+ }
+
+// function firstNamesAllCaps(runners) {
+//   const capsNames = [];
+//   runners.forEach(function(item) {
+//     capsNames.push(item.first_name.toUpperCase());    
+//     });
+//     return capsNames;   
+// }
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
